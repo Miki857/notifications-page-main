@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Notifications page</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="body">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__ntf">
+        <h3 class="ntf__Text">Notifications</h3>
+        <p class="ntf__Counter">7</p>
+      </div>
+      <p class="header__markAll" onclick="markAllAsRead();">Mark all as read</p>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="main__simpleNtf unreaded" onclick="toggleNtfStatus(this)">
+        <div class="ntf__userIcon"><img src="assets/images/avatar-angela-gray.webp" alt=""></div>
+        <div class="ntf__Description">
+          <p><strong class="strong-Bold">Mark Webber</strong> reacted to your recent post <strong class="strong-Light">My first tournament today!</strong> <strong class="ntfDot strong-Bold">•</strong></p> 
+          <p class="ntfDescription__ntfTimePast">1m ago</p>
+        </div>
+      </div>
+
+      <div class="main__simpleNtf unreaded" onclick="toggleNtfStatus(this)">
+        <div class="ntf__userIcon"><img src="assets/images/avatar-angela-gray.webp" alt=""></div>
+        <div class="ntf__Description">
+          <p><strong class="strong-Bold">Angela Gray</strong> followed you<strong class="ntfDot strong-Bold">•</strong></p> 
+          <p class="ntfDescription__ntfTimePast">5m ago</p>
+        </div>
+      </div>
+
+      <div class="main__simpleNtf unreaded" onclick="toggleNtfStatus(this)">
+        <div class="ntf__userIcon"><img src="assets/images/avatar-angela-gray.webp" alt=""></div>
+        <div class="ntf__Description">
+          <p>
+            <strong class="strong-Bold">Jacob Thompson</strong>
+             has joined your group 
+            <strong class="strong-Light">Chess Club</strong>
+            <strong class="ntfDot strong-Bold">•</strong>
+          </p> 
+          <p class="ntfDescription__ntfTimePast">1 day ago</p>
+        </div>
+      </div>
+
+      <div class="main__simpleNtf unreaded" onclick="toggleNtfStatus(this)">
+        <div class="ntf__userIcon"><img src="assets/images/avatar-angela-gray.webp" alt=""></div>
+        <div class="ntf__Description">
+          <p>
+            <strong class="strong-Bold">Rizky Hasanuddin</strong>
+            sent you a private message
+            <strong class="ntfDot strong-Bold">•</strong>
+          </p> 
+          <p class="ntfDescription__ntfTimePast">5 days ago</p>
+          <p class="ntfDescription__privateMessage">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+          </p>
+        </div>
+      </div>
+
+      <div class="main__simpleNtf unreaded" onclick="toggleNtfStatus(this)">
+        <div class="ntf__userIcon"><img src="assets/images/avatar-angela-gray.webp" alt=""></div>
+        <div class="ntf__Description">
+          <p>
+            <strong class="strong-Bold">Kimberly Smith</strong>
+            commented on your picture 
+            <strong class="ntfDot strong-Bold">•</strong>
+          </p> 
+          <p class="ntfDescription__ntfTimePast">1 week ago</p>
+        </div>
+        <div class="ntf__pictureCommented"><img src="assets/images/image-chess.webp" alt=""></div>
+      </div>
+
+      <div class="main__simpleNtf unreaded" onclick="toggleNtfStatus(this)">
+        <div class="ntf__userIcon"><img src="assets/images/avatar-angela-gray.webp" alt=""></div>
+        <div class="ntf__Description">
+          <p>
+            <strong class="strong-Bold">Nathan Peterson</strong>
+             reacted to your recent post 
+            <strong class="strong-Light">5 end-game strategies to increase your win rate</strong>
+            <strong class="ntfDot strong-Bold">•</strong>
+          </p> 
+          <p class="ntfDescription__ntfTimePast">2 weeks ago</p>
+        </div>
+      </div>
+
+      <div class="main__simpleNtf unreaded" onclick="toggleNtfStatus(this)">
+        <div class="ntf__userIcon"><img src="assets/images/avatar-angela-gray.webp" alt=""></div>
+        <div class="ntf__Description">
+          <p>
+            <strong class="strong-Bold">Anna Kim</strong>
+             left the group 
+            <strong class="strong-Bold">Chess Club</strong>
+            <strong class="ntfDot strong-Bold">•</strong>
+          </p> 
+          <p class="ntfDescription__ntfTimePast">2 weeks ago</p>
+        </div>
+      </div>
+    </main>
+    <!-- SCRIPTS -->
+    <script src="assets/js/toggleNtfStatus.js" defer></script>
+  </body>
+</html>
